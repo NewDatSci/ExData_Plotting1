@@ -21,7 +21,7 @@ ReadNPlot4 <- function(datafile)
   plot(DF$Time,DF$Sub_metering_1,type = "l",ylab = "Energy Sub metering",xlab = "")
   lines(DF$Time,DF$Sub_metering_2,type = "l", col="red")
   lines(DF$Time,DF$Sub_metering_3,type = "l", col="blue")
-  legend("topright",lty = c(1,1,1) ,col=c("black","red","blue"),legend = c("Sub_metering1","Sub_metering2","Sub_metering3"),bty="n",cex = .75)
+  legend("topright",lty = c(1,1,1) ,col=c("black","red","blue"),legend = c("Sub_metering1","Sub_metering2","Sub_metering3"),bty="n",cex = .5)
   
   ##Third plot
   plot(DF$Time,DF$Voltage,type = "l",ylab = "Voltage",xlab = "datetime")
@@ -34,4 +34,4 @@ ReadNPlot4 <- function(datafile)
   dev.off()
 }
 
-ReadNPlot4("~/R_Project/Exploratory Analysis/household_power_consumption.txt")
+ReadNPlot4("~/R_Projects/Exploratory Analysis/household_power_consumption.txt")

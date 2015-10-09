@@ -20,3 +20,4 @@ ReadNPlot1 <- function(datafile)
 }
 
 ReadNPlot1("~/R_Projects/Exploratory Analysis/household_power_consumption.txt")
+
